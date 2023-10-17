@@ -28,12 +28,12 @@ const initMap = () => {
         zoom: 11, //缩放，缩放级别在3-15
         zooms: [2, 22],
         mapStyle: 'amap://styles/blue', //设置地图的显示样式
-        center: [118.88064, 32.11352] //初始化地图中心点位置
+        // center: [118.88064, 32.11352] //初始化地图中心点位置
       })
       AMap.plugin('AMap.Weather', () => {
         let weather = new AMap.Weather() //引入地图插件
-        weather.getLive('栖霞区', (err, data) => {
-          // console.log(err, data);
+        weather.getLive('福田区', (err, data) => {
+          console.log(111111111,err, data);
           if (!err) {
             let str = []
             str.push('<h4 >实时天气</h4>')
@@ -49,9 +49,9 @@ const initMap = () => {
             let marker = new AMap.Marker({
               map: map,
               position: map.value.getCenter(),
-              icon: 'https://webapi.amap.com/images/car.png',
+              // icon: 'https://webapi.amap.com/images/car.png',
               autoRotation: true, // 自动旋转
-              angle: 90 // 图片旋转角度
+              // angle: 90 // 图片旋转角度
             })
             //自定义信息窗体
             let infoWin = new AMap.InfoWindow({
@@ -76,7 +76,7 @@ const initMap = () => {
           }
         })
         //未来4天天气预报
-        weather.getForecast('栖霞区', (err, data) => {
+        weather.getForecast('福田区', (err, data) => {
           console.log(err, data)
           if (err) {
             return
