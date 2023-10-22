@@ -20,8 +20,8 @@ const router = createRouter({
       component: () => import('@/views/AboutView.vue')
     },
     {
-      path: '/map',
-      name: 'map',
+      path: '/GDmap',
+      name: 'GDmap',
       component: () => import('@/views/GDmap/GDmap.vue')
     },
     {
