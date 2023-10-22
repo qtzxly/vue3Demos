@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/Cesium',
       name: 'Cesium',
       component: () => import('@/views/Cesium/Cesium.vue')
+    },
+    {
+      path: '/Three',
+      name: 'Three',
+      component: () => import('@/views/Threejs/Scene.vue')
     }
   ]
 })
