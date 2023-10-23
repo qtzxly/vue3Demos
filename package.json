@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@tinymce/tinymce-vue": "^5.1.1",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",

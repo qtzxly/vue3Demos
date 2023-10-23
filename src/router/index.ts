@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('@/views/GDmap/GDmap.vue')
     },
     {
+      path: '/GoogleMap',
+      name: 'GoogleMap',
+      component: () => import('@/views/GoogleMap/GoogleMap.vue')
+    },
+    {
       path: '/Cesium',
       name: 'Cesium',
       component: () => import('@/views/Cesium/Cesium.vue')
@@ -33,7 +38,8 @@ const router = createRouter({
       path: '/Three',
       name: 'Three',
       component: () => import('@/views/Threejs/Scene.vue')
-    }
+    },
+    
   ]
 })
 
