@@ -20,9 +20,13 @@
     "vue-router": "^4.2.4",
     "cesium": "^1.110.0",
     "gsap": "^3.9.1",
-    "three": "^0.138.3",
     "dat.gui": "^0.7.9",
-    "mitt": "^3.0.0"
+    "mitt": "^3.0.0",
+
+    "html2canvas": "^1.4.1",
+    "lodash": "^4.17.21",
+    "pietile-eventemitter": "^1.0.1",
+    "three": "^0.143"
 
   },
   "devDependencies": {
